@@ -1,7 +1,8 @@
 const btn = document.getElementById("btn");
-const score = document.querySelector(".score");
+const score1 = document.querySelector(".score1");
 const yourScore = document.getElementById("yourScore");
+const thankU = document.querySelector(".thankUstate");
 
 btn.addEventListener("click", () => {
-  console.log(yourScore);
+  thankU.style.visibility = "visible";
 });

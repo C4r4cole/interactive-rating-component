@@ -17,6 +17,7 @@ h1{
 
 p{
     font-size: 15px;
+    text-align: center;
     margin-top: 0;
 }
 
@@ -82,4 +83,32 @@ a:active{
     background: white;
     color: hsl(25, 97%, 53%);
     border: 2px solid white;
+}
+
+.thankUstate{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: hsl(213, 19%, 18%);
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    visibility: hidden;
+}
+
+.selection{
+    margin-bottom: 0;
+    background: hsl(214, 19%, 22%);
+    color: hsl(25, 97%, 53%);
+    width: 160px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+svg{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
