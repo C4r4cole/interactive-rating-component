@@ -21,7 +21,7 @@ p{
     margin-top: 0;
 }
 
-.ratingState{
+#ratingState{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -65,7 +65,7 @@ span:active{
     justify-content: space-between;
 }
 
-a{
+button{
     text-decoration: none;
     text-align: center;
     line-height: 40px;
@@ -85,7 +85,7 @@ a:active{
     border: 2px solid white;
 }
 
-.thankUstate{
+#thankUstate{
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -96,7 +96,6 @@ a:active{
     height: 300px;
     padding: 30px;
     border-radius: 20px;
-    visibility: hidden;
 }
 
 .selection{
