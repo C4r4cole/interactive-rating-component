@@ -22,6 +22,7 @@ p{
 }
 
 #ratingState{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -32,6 +33,17 @@ p{
     border-radius: 20px;
 }
 
+.container{
+display: block;
+position: relative;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
 .star{
     display: flex;
     justify-content: center;
@@ -41,28 +53,33 @@ p{
     height: 40px;
     border-radius: 40px;
 }
-span{
-    background: hsl(214, 19%, 22%);
+
+.checkmark{
+    position: relative;
+    /* border: 2px solid white; */   
+    background-color: hsl(214, 19%, 22%);
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
-span:hover{
-    background: hsl(217, 12%, 63%);
+.container:hover input ~ .checkmark{
+    background-color: hsl(217, 12%, 63%);
 }
 
-span:active{
-    background: hsl(25, 97%, 53%);
+.container input:checked ~ .checkmark {
+    background-color: hsl(25, 97%, 53%);
     color: white;
 }
 
 .rate{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* margin: 10px; */
+    /* margin-bottom: 10px; */
 }
 
 button{
@@ -79,14 +96,13 @@ button{
     cursor: pointer;
 }
 
-a:active{
+button:active{
     background: white;
     color: hsl(25, 97%, 53%);
     border: 2px solid white;
 }
 
 #thankUstate{
-    display: flex;
     position: absolute;
     flex-direction: column;
     justify-content: space-around;
@@ -98,7 +114,21 @@ a:active{
     border-radius: 20px;
 }
 
+#thankUstate img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+#thankUstate h1{
+    text-align: center;
+}
+
 .selection{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 0;
     background: hsl(214, 19%, 22%);
     color: hsl(25, 97%, 53%);

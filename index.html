@@ -23,24 +23,41 @@
   <!-- Rating state start -->
   <div id="ratingState">
 
-    <div class="star">
-      <img src="./images/icon-star.svg" alt="start">
-    </div>
+      <div class="star">
+        <img src="./images/icon-star.svg" alt="star">
+      </div>
 
-    <h1>How did we do?</h1>
+      <h1>How did we do?</h1>
 
-    <p>Please let us know how we did with your support request. All feedback is appreciated
-      to help us improve our offering!</p>
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
 
-    <div class="rate">
-      <span class="score1">1</span>
-      <span class="score2">2</span>
-      <span class="score3">3</span>
-      <span class="score4">4</span>
-      <span class="score5">5</span>
-    </div>
+      <div class="rate">
+        
+        <label class="container">
+          <input type="radio" checked="checked" name="score">
+          <span class="checkmark">1</span>
+        </label>
+        <label class="container">
+          <input type="radio" name="score">
+          <span class="checkmark">2</span>
+        </label>
+        <label class="container">
+          <input type="radio" name="score">
+          <span class="checkmark">3</span>
+        </label>
+        <label class="container">
+          <input type="radio" name="score">
+          <span class="checkmark">4</span>
+        </label>
+        <label class="container">
+          <input type="radio" name="score">
+          <span class="checkmark">5</span>
+        </label>
 
-    <button id="btn" href="">SUBMIT</button>
+      </div>
+
+      <button type="submit" id="btn">SUBMIT</button>
 
   </div>
   <!-- Rating state end -->
