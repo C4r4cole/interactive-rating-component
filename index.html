@@ -1,83 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./style.css" />
 
-  <link rel="stylesheet" href="./style.css">
+		<title>Frontend Mentor | Interactive rating component</title>
+	</head>
 
-  <title>Frontend Mentor | Interactive rating component</title>
+	<body>
+		<!-- Rating state start -->
+		<div id="ratingState">
+			<div class="star">
+				<img src="./images/icon-star.svg" alt="star" />
+			</div>
 
-</head>
+			<h1>How did we do?</h1>
 
-<body>
+			<p>
+				Please let us know how we did with your support request. All feedback is appreciated to help us improve
+				our offering!
+			</p>
 
-  <!-- Rating state start -->
-  <div id="ratingState">
+			<div class="rate">
+				<label class="container">
+					<input type="radio" checked="checked" name="score" id="score1" />
+					<span class="checkmark">1</span>
+				</label>
+				<label class="container">
+					<input type="radio" name="score" id="score2" />
+					<span class="checkmark">2</span>
+				</label>
+				<label class="container">
+					<input type="radio" name="score" id="score3" />
+					<span class="checkmark">3</span>
+				</label>
+				<label class="container">
+					<input type="radio" name="score" id="score4" />
+					<span class="checkmark">4</span>
+				</label>
+				<label class="container">
+					<input type="radio" name="score" id="score5" />
+					<span class="checkmark">5</span>
+				</label>
+			</div>
 
-      <div class="star">
-        <img src="./images/icon-star.svg" alt="star">
-      </div>
+			<button type="submit" id="btn">SUBMIT</button>
+		</div>
+		<!-- Rating state end -->
 
-      <h1>How did we do?</h1>
+		<!-- Thank you state start -->
 
-      <p>Please let us know how we did with your support request. All feedback is appreciated
-        to help us improve our offering!</p>
+		<div id="thankUstate" hidden>
+			<img src="./images/illustration-thank-you.svg" alt="thankU" />
 
-      <div class="rate">
-        
-        <label class="container">
-          <input type="radio" checked="checked" name="score">
-          <span class="checkmark">1</span>
-        </label>
-        <label class="container">
-          <input type="radio" name="score">
-          <span class="checkmark">2</span>
-        </label>
-        <label class="container">
-          <input type="radio" name="score">
-          <span class="checkmark">3</span>
-        </label>
-        <label class="container">
-          <input type="radio" name="score">
-          <span class="checkmark">4</span>
-        </label>
-        <label class="container">
-          <input type="radio" name="score">
-          <span class="checkmark">5</span>
-        </label>
+			<p class="selection">You selected <span id="yourScore"></span> out of 5</p>
 
-      </div>
+			<h1>Thank you!</h1>
 
-      <button type="submit" id="btn">SUBMIT</button>
+			<p>
+				We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get
+				in touch!
+			</p>
+		</div>
+		<!-- Thank you state end -->
 
-  </div>
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <div id="thankUstate" hidden>
-
-    <img src="./images/illustration-thank-you.svg" alt="thankU">
-
-    <p class="selection">You selected <span id="yourScore"></span>out of 5</p>
-
-    <h1>Thank you!</h1>
-
-    <p>We appreciate you taking the time to give a rating. If you ever need more support,
-        don’t hesitate to get in touch!</p>
-</div>
-<!-- Thank you state end -->
-
-  <script src="./index.js"></script>
-</body>
-
+		<script src="./index.js"></script>
+	</body>
 </html>
